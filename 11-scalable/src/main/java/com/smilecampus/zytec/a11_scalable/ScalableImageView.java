@@ -98,6 +98,7 @@ public class ScalableImageView extends View implements GestureDetector.OnGesture
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+        //方法1 将双击方法的图片 然后拖拽 然后缩小回到原点 然后在缩放动画中添加动画监听
         canvas.translate(offsetX * scaleFraction, offsetY * scaleFraction);
 //        float scale = big ? bigScale : smallScale;
         //需要方法多少
@@ -151,15 +152,19 @@ public class ScalableImageView extends View implements GestureDetector.OnGesture
         //如果是大图 再移动
         if (big) {
             offsetX -= distanceX;
-            //图片有临界值 不能大与放大图片的宽 - View的宽 / 2
-            offsetX = Math.min(offsetX, (bitmap.getWidth() * bigScale - getWidth()) / 2);
-            offsetX = Math.max(offsetX, -(bitmap.getWidth() * bigScale - getWidth()) / 2);
             offsetY -= distanceY;
-            offsetY = Math.min(offsetY, (bitmap.getHeight() * bigScale - getHeight()) / 2);
-            offsetY = Math.max(offsetY, -(bitmap.getHeight() * bigScale - getHeight()) / 2);
+            fitOffsets();
             invalidate();
         }
         return false;
+    }
+
+    private void fitOffsets() {
+        //图片有临界值 不能大与放大图片的宽 - View的宽 / 2
+        offsetX = Math.min(offsetX, (bitmap.getWidth() * bigScale - getWidth()) / 2);
+        offsetX = Math.max(offsetX, -(bitmap.getWidth() * bigScale - getWidth()) / 2);
+        offsetY = Math.min(offsetY, (bitmap.getHeight() * bigScale - getHeight()) / 2);
+        offsetY = Math.max(offsetY, -(bitmap.getHeight() * bigScale - getHeight()) / 2);
     }
 
     /**
@@ -256,6 +261,10 @@ public class ScalableImageView extends View implements GestureDetector.OnGesture
         big = !big;
         //如果当前是要放大 那缩放动画是从0-1
         if (big) {
+            offsetX = (e.getX() - getWidth() / 2f) - (e.getX() - getWidth() / 2f) * bigScale / smallScale;
+            offsetY = (e.getY() - getHeight() / 2f) - (e.getY() - getHeight() / 2f) * bigScale / smallScale;
+            //修复边界
+            fitOffsets();
             getScaleAnimator().start();
         } else {
             getScaleAnimator().reverse();
@@ -279,7 +288,7 @@ public class ScalableImageView extends View implements GestureDetector.OnGesture
      */
     private ObjectAnimator getScaleAnimator() {
         if (scaleAnimator == null) {
-            scaleAnimator = ObjectAnimator.ofFloat(this, "scaleFraction", 0, 1);
+            scaleAnimator = ObjectAnimator.ofFloat(this, "currentScale", 0, 1);
         }
         return scaleAnimator;
     }
