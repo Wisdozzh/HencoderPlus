@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/06-drawing" />
+            <option value="$PROJECT_DIR$/07-change_camera_animation" />
+            <option value="$PROJECT_DIR$/08-animation" />
+            <option value="$PROJECT_DIR$/09-bitmap_drawable" />
+            <option value="$PROJECT_DIR$/10-layout" />
+            <option value="$PROJECT_DIR$/11-scalable" />
+            <option value="$PROJECT_DIR$/13-multi_touch" />
+            <option value="$PROJECT_DIR$/14-view_pager" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
