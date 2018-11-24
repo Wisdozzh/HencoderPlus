@@ -109,17 +109,22 @@ public class TwoPager extends ViewGroup {
                 scrollTo((int) dx, 0);
                 break;
             case MotionEvent.ACTION_UP:
-                velocityTracker.computeCurrentVelocity(100, maxVelocity);
+                //1000ms 定时记一下时
+                velocityTracker.computeCurrentVelocity(1000, maxVelocity);
                 float vx = velocityTracker.getXVelocity();
                 int scrollX = getScrollX();
                 int targetPage;
+                //如果横向的速度小于一个特定的值 我就把它定为用户手抬起来 不想滑动到下一页 希望停下来
                 if (Math.abs(vx) < minVelocity) {
                     targetPage = scrollX > getWidth() / 2 ? 1 : 0;
                 } else {
                     targetPage = vx < 0 ? 1 : 0;
                 }
                 int scrollDistance = targetPage == 1 ? (getWidth() - scrollX) : -scrollX;
+                //有起始值 快快的滑动 慢慢的停下 用startScroll
+                //如果快快的滑动 然后有一种撞墙的 用fling
                 overScroller.startScroll(getScrollX(), 0, scrollDistance,0);
+                //computeScroll会自动的调用 在draw 并且在onDraw之前调用 先计算一下
                 postInvalidateOnAnimation();
                 break;
         }
