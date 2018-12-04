@@ -17,6 +17,8 @@
             <option value="$PROJECT_DIR$/13-multi_touch" />
             <option value="$PROJECT_DIR$/14-view_pager" />
             <option value="$PROJECT_DIR$/15_drag_nestedscroll" />
+            <option value="$PROJECT_DIR$/16_thread_synchronization" />
+            <option value="$PROJECT_DIR$/17_thread_interaction" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
