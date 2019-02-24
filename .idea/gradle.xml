@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/04_retrofit" />
             <option value="$PROJECT_DIR$/06-drawing" />
             <option value="$PROJECT_DIR$/07-change_camera_animation" />
             <option value="$PROJECT_DIR$/08-animation" />
@@ -20,6 +21,12 @@
             <option value="$PROJECT_DIR$/16_thread_synchronization" />
             <option value="$PROJECT_DIR$/17_thread_interaction" />
             <option value="$PROJECT_DIR$/18_rxjava" />
+            <option value="$PROJECT_DIR$/25_mvc_mvp_mvvm" />
+            <option value="$PROJECT_DIR$/28_annotation_processing" />
+            <option value="$PROJECT_DIR$/28_lib_annotation_processor" />
+            <option value="$PROJECT_DIR$/28_lib_annotations" />
+            <option value="$PROJECT_DIR$/28_lib_processor" />
+            <option value="$PROJECT_DIR$/28_lib_reflection" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

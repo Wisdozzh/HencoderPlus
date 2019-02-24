@@ -12,11 +12,13 @@ public class Main {
 //        List<String> provinces = Arrays.asList("北京市",
 //                "天津市",
 //                "上海市");
-        List<String> provinces = Arrays.asList();
-        for (String s:provinces) {
-            System.out.println(s);
-        }
-        System.out.println(provinces);
+
+//        List<String> provinces = Arrays.asList();
+//        for (String s:provinces) {
+//            System.out.println(s);
+//        }
+//        System.out.println(provinces);
+
     }
 
     static void runThreadInteractionDemo() {
