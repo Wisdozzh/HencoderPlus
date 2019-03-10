@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".ui.AvatarViewActivity">
 
-    <com.smilecampus.zytec.hencoderplus06.view.AvatarView
+    <com.smilecampus.zytec.hencoderplus06.view.AvatarView1
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

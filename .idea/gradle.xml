@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/04_retrofit" />
+            <option value="$PROJECT_DIR$/05_okhttp" />
             <option value="$PROJECT_DIR$/06-drawing" />
             <option value="$PROJECT_DIR$/07-change_camera_animation" />
             <option value="$PROJECT_DIR$/08-animation" />
