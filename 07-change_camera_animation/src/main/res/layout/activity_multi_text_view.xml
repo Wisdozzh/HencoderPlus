@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".ui.ImageMultiTextViewActivity">
 
-    <com.smilecampus.zytec.hencoderplus07.view.ImageMultiTextView
+    <com.smilecampus.zytec.hencoderplus07.view.ImageMultiTextView1
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

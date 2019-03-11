@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".ui.SportsViewActivity">
 
-    <com.smilecampus.zytec.hencoderplus07.view.SportsView
+    <com.smilecampus.zytec.hencoderplus07.view.SportsView1
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".ui.CameraViewActivity">
 
-    <com.smilecampus.zytec.hencoderplus07.view.CameraView
+    <com.smilecampus.zytec.hencoderplus07.view.CameraView1
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
