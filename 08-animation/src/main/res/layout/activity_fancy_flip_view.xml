@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.FancyFlipViewActivity">
 
-    <com.smilecampus.zytec.ehncoderplus08.view.FancyFlipView
+    <com.smilecampus.zytec.ehncoderplus08.view.FancyFlipView1
         android:id="@+id/fancyFlipView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

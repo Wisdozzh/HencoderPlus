@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".ui.CircleViewActivity">
 
-    <com.smilecampus.zytec.ehncoderplus08.view.CircleView
+    <com.smilecampus.zytec.ehncoderplus08.view.CircleView1
         android:id="@+id/circleView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

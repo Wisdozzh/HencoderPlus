@@ -17,9 +17,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.CircleViewActivity" />
+        <activity android:name=".ui.CircleViewActivity1" />
         <activity android:name=".ui.PointViewActivity" />
+        <activity android:name=".ui.PointViewActivity1" />
         <activity android:name=".ui.ProvinceViewActivity" />
-        <activity android:name=".ui.FancyFlipViewActivity"></activity>
+        <activity android:name=".ui.ProvinceViewActivity1" />
+        <activity android:name=".ui.FancyFlipViewActivity"/>
+        <activity android:name=".ui.FancyFlipViewActivity1"/>
     </application>
 
 </manifest>

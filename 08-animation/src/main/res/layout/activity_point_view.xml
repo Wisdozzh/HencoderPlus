@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".ui.PointViewActivity">
 
-    <com.smilecampus.zytec.ehncoderplus08.view.PointView
+    <com.smilecampus.zytec.ehncoderplus08.view.PointView1
         android:id="@+id/pointview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

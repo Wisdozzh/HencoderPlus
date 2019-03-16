@@ -5,9 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.smilecampus.zytec.ehncoderplus08.ui.CircleViewActivity;
+import com.smilecampus.zytec.ehncoderplus08.ui.CircleViewActivity1;
 import com.smilecampus.zytec.ehncoderplus08.ui.FancyFlipViewActivity;
+import com.smilecampus.zytec.ehncoderplus08.ui.FancyFlipViewActivity1;
 import com.smilecampus.zytec.ehncoderplus08.ui.PointViewActivity;
+import com.smilecampus.zytec.ehncoderplus08.ui.PointViewActivity1;
 import com.smilecampus.zytec.ehncoderplus08.ui.ProvinceViewActivity;
+import com.smilecampus.zytec.ehncoderplus08.ui.ProvinceViewActivity1;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,18 +22,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onCircleView(View view) {
-        CircleViewActivity.start(this);
+        CircleViewActivity1.start(this);
     }
 
     public void onPointView(View view) {
-        PointViewActivity.start(this);
+        PointViewActivity1.start(this);
     }
 
     public void onProvinceView(View view) {
-        ProvinceViewActivity.start(this);
+        ProvinceViewActivity1.start(this);
     }
 
     public void onFancyFlipView(View view) {
-        FancyFlipViewActivity.start(this);
+        FancyFlipViewActivity1.start(this);
     }
 }
