@@ -3,12 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
+    <!--<com.smilecampus.zytec.a09_bitmap_drawable.DrawableView1-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="300dp"-->
+    <!--android:hint="username"-->
+    <!--android:background="#0f0"/>-->
 
-    <com.smilecampus.zytec.a09_bitmap_drawable.MaterialEditText
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="username"/>
+        android:background="#30000000">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#30ff0000">
+
+        <com.smilecampus.zytec.a09_bitmap_drawable.MaterialEditText1
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:useFloatingLabel= "false"
+            android:hint="username" />
+    </FrameLayout>
 </LinearLayout>
