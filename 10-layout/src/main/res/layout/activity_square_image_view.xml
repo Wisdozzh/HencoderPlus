@@ -6,10 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".SquareImageViewActivity">
 
-    <com.smilecampus.zytec.a10_layout.view.SquareImageView
+    <com.smilecampus.zytec.a10_layout.view.SquareImageView1
         android:layout_width="50dp"
         android:layout_height="150dp"
         android:src="@drawable/avatar_rengwuxian"
         android:scaleType="centerCrop"/>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#FF0"/>
 
 </LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".TagLayoutActivity">
 
-    <com.smilecampus.zytec.a10_layout.view.TagLayout
+    <com.smilecampus.zytec.a10_layout.view.TagLayout1
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -179,6 +179,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="澳门特别行政区" />
-    </com.smilecampus.zytec.a10_layout.view.TagLayout>
+    </com.smilecampus.zytec.a10_layout.view.TagLayout1>
 
 </LinearLayout>
