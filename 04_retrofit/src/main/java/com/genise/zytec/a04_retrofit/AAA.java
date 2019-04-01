@@ -2,5 +2,5 @@ package com.genise.zytec.a04_retrofit;
 
 public class AAA {
 
-    private static final int AAAA = 100;
+    public static final int BBBB = 10000;
 }
